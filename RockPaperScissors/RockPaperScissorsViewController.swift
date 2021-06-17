@@ -45,6 +45,13 @@ class RockPaperScissorsViewController: UIViewController {
         }
     }
     
+    // MARK: Segue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! ResultViewController
+        controller.match = self.match
+    }
+    
     // MARK: Play!
     
     func throwDown(_ playersMove: RPS) {
@@ -67,7 +74,7 @@ class RockPaperScissorsViewController: UIViewController {
         
             // Communicate the match
             resultVC.match = self.match
-            self.present(resultVC, animated: true, completion: nil)
+            self.navigationController?.pushViewController(resultVC, animated: true)
         }
         
         // 2nd Way: Code plus Segue
@@ -92,6 +99,6 @@ class RockPaperScissorsViewController: UIViewController {
         self.present(controller, animated: true, completion: nil)
     }
 
-    // MARK: Segue
+    
     
 }

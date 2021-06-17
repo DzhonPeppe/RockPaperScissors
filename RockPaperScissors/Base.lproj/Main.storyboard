@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Rock Paper Scissors View Controller-->
+        <!--RockPaperScissorsViewController-->
         <scene sceneID="czw-Os-0c9">
             <objects>
-                <viewController storyboardIdentifier="RockPaperScissorsViewController" id="iYZ-Mq-4iF" customClass="RockPaperScissorsViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RockPaperScissorsViewController" title="RockPaperScissorsViewController" id="iYZ-Mq-4iF" customClass="RockPaperScissorsViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HUJ-al-Ubx"/>
                         <viewControllerLayoutGuide type="bottom" id="fqQ-nG-h6S"/>
@@ -171,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fI-8v-hKF">
-                                <rect key="frame" x="0.0" y="881" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="827" width="414" height="49"/>
                                 <items>
                                     <barButtonItem title="Cancel" id="lON-HQ-PZI"/>
                                 </items>
